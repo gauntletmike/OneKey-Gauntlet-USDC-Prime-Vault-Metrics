@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="description" content="Live deposits, yield, allocations, and activity for the OneKey USDC Prime vault on Base.">
+  <title>OneKey USDC Prime · Vault Analytics</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar"><div class="topbar-inner"><a class="brand" href="#overview"><span class="brand-mark">O</span> OneKey <span class="brand-divider"></span><span class="brand-sub">Earn analytics</span></a><span class="network"><span class="base-mark"></span> Base</span></div></header>
+  <main>
+    <section class="vault-header">
+      <div class="vault-title"><span class="token-icon large">$</span><div><div class="eyebrow">USDC VAULT <span class="tag">Fee wrapper</span></div><h1>OneKey USDC Prime</h1><p class="subtitle">Underlying strategy curated by Gauntlet</p></div></div>
+      <div class="header-tools"><div id="vault-address"></div><div class="refresh-row"><span id="updated" aria-live="polite">Connecting to Morpho…</span><button id="refresh" class="icon-button" aria-label="Refresh vault data" title="Refresh data">↻</button></div></div>
+    </section>
+    <div id="status" role="status"></div>
+    <section id="metrics" class="metrics" aria-label="Vault summary"><div class="metric"><span>Total deposits</span><strong class="skeleton">&nbsp;</strong><small>Wrapper TVL</small></div><div class="metric"><span>Available liquidity</span><strong class="skeleton">&nbsp;</strong><small>USDC</small></div><div class="metric"><span>Net APY</span><strong class="skeleton">&nbsp;</strong><small>After vault and wrapper fees</small></div><div class="metric"><span>Exposure</span><strong class="skeleton">&nbsp;</strong><small>Underlying collateral</small></div></section>
+    <nav id="tabs" class="tabs" aria-label="Vault sections"><a href="#overview" data-tab="overview" class="active" aria-current="page">Overview</a><a href="#allocation" data-tab="allocation">Allocation</a><a href="#performance" data-tab="performance">Performance</a><a href="#risk" data-tab="risk">Risk</a><a href="#activity" data-tab="activity">Activity</a></nav>
+    <section id="view" class="view" aria-live="polite"><div class="panel"><h2>Vault overview</h2><p class="muted">Loading live vault balances, yield, and configuration…</p><div class="chart-skeleton skeleton"></div></div></section>
+    <footer><span>OneKey USDC Prime · Base</span><span>Data from Morpho’s public API. Analytics only.</span><a href="https://docs.morpho.org/developers/earn/concepts/fee-wrapper/" target="_blank" rel="noopener noreferrer">About fee wrappers</a></footer>
+  </main>
+</body>
+</html>

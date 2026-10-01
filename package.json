@@ -1,0 +1,9 @@
+{
+  "name": "onekey-vault-analytics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Live OneKey Morpho fee-wrapper analytics, ready for Vercel",
+  "scripts": { "dev": "node dev.mjs", "start": "node dev.mjs", "test": "node --test tests/*.test.mjs", "check": "node --check app.js && node --check api/vault.js && node --check lib/morpho.js" },
+  "engines": { "node": ">=22" }
+}
